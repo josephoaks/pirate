@@ -1,0 +1,10 @@
+# ~/.tmuxinator/puppet.yml
+
+name: puppet
+
+windows:
+  - editor:
+      layout: even-vertical
+      panes:
+        -
+        -
