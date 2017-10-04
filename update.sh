@@ -5,12 +5,10 @@
 #######################################
 sep='##########'
 localpath=`pwd`
-#for x in !pltraining-classroom_cleanup; do
 for x in */; do
   if
-    [ "$x" == "pltraining-classroom_cleanup/" ] || \
-    [ "$x" == "classroom-control-pi/" ] || \
-    [ "$x" == "classroom-control-vf/" ] || \
+    [ "$x" == "classroom-control-pi/" ] || \			                # List of repos you don’t want
+    [ "$x" == "classroom-control-vf/" ] || \			                # to auto-update
     [ "$x" == "classroom-control-vp/" ] ; then
     continue;
   fi
